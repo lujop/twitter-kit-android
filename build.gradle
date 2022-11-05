@@ -14,15 +14,16 @@
  * limitations under the License.
  *
  */
+apply from: rootProject.file('dependencies.gradle')
 
-subprojects { subproject ->
+subprojects { Project subproject ->
     buildscript {
         repositories {
             google()
             mavenCentral()
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:7.0.0-alpha15'
+            classpath dependency.androidGradlePlugin
         }
     }
 
@@ -31,4 +32,3 @@ subprojects { subproject ->
         mavenCentral()
     }
 }
-

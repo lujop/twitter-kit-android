@@ -71,7 +71,7 @@ public class TweetUi {
     }
 
     public String getVersion() {
-        return "3.3.0";
+        return "3.3.1";
     }
 
     TweetRepository getTweetRepository() {

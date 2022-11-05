@@ -1,7 +1,7 @@
 ext {
-    compileSdkVersion = 29
-    buildToolsVersion = '28.0.3'
-    targetSdkVersion = 29
+    compileSdkVersion = 33
+    buildToolsVersion = '30.0.2'
+    targetSdkVersion = 30
     minSdkVersion = 21
 
     sourceCompatibilityVersion = JavaVersion.VERSION_1_8
@@ -11,9 +11,8 @@ ext {
 
     dependency = [
             // Gradle plugins
-            androidGradlePlugin        : 'com.android.tools.build:gradle:3.0.0',
-
-            // Mopub
+            spoonGradlePlugin          : 'com.stanfy.spoon:spoon-gradle-plugin:1.0.4',
+            androidGradlePlugin        : 'com.android.tools.build:gradle:7.3.1',
 
             // Sample App
             leakCanary                 : 'com.squareup.leakcanary:leakcanary-android:1.5.3',
@@ -31,7 +30,7 @@ ext {
             dexmakerMockito            : 'com.linkedin.dexmaker:dexmaker-mockito:2.2.0',
 
             // Other
-            picasso                    : 'com.squareup.picasso:picasso:2.5.2',
+            picasso                    : 'com.squareup.picasso:picasso:2.71828',
             supportCompatV4            : 'com.android.support:support-compat:26.1.0',
             supportCoreV4              : 'com.android.support:support-core-ui:26.1.0',
             retrofit                   : 'com.squareup.retrofit2:retrofit:2.3.0',
